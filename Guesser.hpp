@@ -18,11 +18,11 @@ namespace bullpgia{
 
     virtual	std::string guess()=0; // pure virtual function no one reads it - we do not implementat this. some classes override this
 
-    virtual void learn(std::string str){}; // cant be pure virtual. why?  no one overrides this. if some one overrides this, I can make it pure virtual.
+    virtual void learn(std::string str){}; // cant be pure virtual-no one overrides this. if some one overrides this, I can make it pure virtual.
     //but if not, then I have to implement it.
 
     virtual void startNewGame(uint len){ // if it is virtual start() in the son will be invoked
-    std::cout << "the game has begun ... length: " << len << std::endl;
+    std::cout << "the game has begun: " << std::endl;
     length = len;
    }
 
