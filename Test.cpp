@@ -58,7 +58,7 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("9745","4152"), "0,2")
 		.CHECK_OUTPUT(calculateBullAndPgia("9745","8152"), "0,1")
 		.CHECK_OUTPUT(calculateBullAndPgia("9745","4552"), "0,2")
-		.CHECK_OUTPUT(calculateBullAndPgia("9745","4555"), "1,1") // to fix
+		.CHECK_OUTPUT(calculateBullAndPgia("9745","4555"), "1,1") 
 		.CHECK_OUTPUT(calculateBullAndPgia("9412","9415"), "3,0")
 		.CHECK_OUTPUT(calculateBullAndPgia("4565","4565"), "4,0")
 		;
@@ -80,10 +80,21 @@ int main() {
 			testcase.CHECK_EQUAL(play(randy2, smarty2, 2, 100)<=50, true);
 		}
 
-        for (uint i=0; i<100; ++i) {
+        	for (uint i=0; i<100; ++i) {
 		testcase.CHECK_EQUAL(play(randy2, smarty2, 5, 100)<=10, true);
 		}
-
+		
+		for (uint i=0; i<100; ++i) {
+		testcase.CHECK_EQUAL(play(randy2, smarty2, 2, 10)<=20, true);
+		}
+		
+		for (uint i=0; i<10; ++i) {
+		testcase.CHECK_EQUAL(play(randy2, smarty2, 5, 100)<=4, false);
+		}
+		
+       		 for (uint i=0; i<100; ++i) {
+		testcase.CHECK_EQUAL(play(randy2, smarty2,3, 100)<=10, true);
+		}
     grade = testcase.grade();
 	} else {
 		testcase.print_signal(signal);
