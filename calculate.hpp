@@ -3,4 +3,4 @@
 
 using std::string;
 
-std::string calculateBullAndPgia(std::string str1, std::string str2);
+std::string calculateBullAndPgia(const std::string str1, const std::string str2);

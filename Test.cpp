@@ -61,6 +61,26 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("9745","4555"), "1,1") 
 		.CHECK_OUTPUT(calculateBullAndPgia("9412","9415"), "3,0")
 		.CHECK_OUTPUT(calculateBullAndPgia("4565","4565"), "4,0")
+
+		.CHECK_OUTPUT(calculateBullAndPgia("1","2"), "0,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("4","7"), "0,0") 
+		.CHECK_OUTPUT(calculateBullAndPgia("3","3"), "1,0")
+
+		.CHECK_OUTPUT(calculateBullAndPgia("10", "53"), "0,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("15","51"), "0,2")
+		.CHECK_OUTPUT(calculateBullAndPgia("25","15"), "1,0") 
+		.CHECK_OUTPUT(calculateBullAndPgia("55","54"), "1,0")
+
+		.CHECK_OUTPUT(calculateBullAndPgia("123","456"), "0,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("123","345"), "0,1")
+		.CHECK_OUTPUT(calculateBullAndPgia("123","423"), "2,0") 
+		.CHECK_OUTPUT(calculateBullAndPgia("123","123"), "3,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("555","999"), "0,0")
+
+		.CHECK_OUTPUT(calculateBullAndPgia("12345","67890"), "0,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("55555","55555"), "1,0") 
+		.CHECK_OUTPUT(calculateBullAndPgia("55558","12345"), "0,1")
+		.CHECK_OUTPUT(calculateBullAndPgia("45658","45651"), "4,0")
 		;
 
 		testcase.setname("Play with dummy choosers and guessers")
@@ -103,4 +123,5 @@ int main() {
 	cout << "Your grade is: "  << grade << endl;
 	return 0;
 }
+
 

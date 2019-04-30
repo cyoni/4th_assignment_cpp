@@ -5,7 +5,7 @@ using std::string;
 #include "calculate.hpp"
 
 
-std::string calculateBullAndPgia(std::string str1, std::string str2){
+std::string calculateBullAndPgia(const std::string str1, const std::string str2){
 
     int len1 = str1.length();
     int len2 = str2.length();
