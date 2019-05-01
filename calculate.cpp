@@ -6,6 +6,7 @@ using std::string;
 
 
 std::string calculateBullAndPgia(const std::string str1, const std::string str2){
+    
 
     int len1 = str1.length();
     int len2 = str2.length();
@@ -13,7 +14,10 @@ std::string calculateBullAndPgia(const std::string str1, const std::string str2)
     int arr2[len2];
     int visited[len2];
     for (int i=0; i<len1; i++) visited[i] = 0;
-
+    
+    cout << str1 << " sec str " << str2 << endl;
+    
+    
     if (len1 != len2) std::cout << "error!!" << std::endl;
 
     for (int i=0; i<len1; i++){arr1[i] = str1[i];arr2[i] = str2[i];} // copy strings into arrays
