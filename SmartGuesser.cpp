@@ -7,12 +7,12 @@
 
     using namespace std;
     bullpgia::SmartGuesser::SmartGuesser(){
-	cout << "smart algo is fixing to start." << endl;
+	//cout << "smart algo is about to start." << endl;
 
 	}
 
     void bullpgia::SmartGuesser::learn(string str){
-    cout << str << endl;
+ //   cout << str << endl;
     bAndp = str;
     }
 
@@ -56,10 +56,10 @@
     string bullpgia::SmartGuesser::guess(){ // goes to here
 
 
-    cout << "bul pgia. "<< bAndp << " and tries " << Try << endl;
-    cout << "certain list:";
-    for (int i=0; i<length; i++) cout << certain[i] << ",";
-    cout << "" <<endl;
+    cout << "bul pgia. "<< bAndp << " and try no. " << Try << endl;
+  //  cout << "certain list:";
+  //  for (int i=0; i<length; i++) cout << certain[i] << ",";
+ //   cout << "" <<endl;
     string tmp1 = "";
     string tmp2 = "";
 
@@ -106,7 +106,7 @@
                  Rand = rand() % 10;
                 if (check_if_not_in_list(looking, Rand)==0){
                 Guess[looking] = Rand+48;
-                cout << "I GUESSED " << Guess << endl;
+               // cout << "I GUESSED " << Guess << endl;
                 return Guess;}
                 else{
                if (!check_if_not_in_list(looking, Rand-48)) { not_in_place[looking].push_back(Rand);}
