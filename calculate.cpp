@@ -18,7 +18,7 @@ std::string calculateBullAndPgia(const std::string str1, const std::string str2)
     std::cout << str1 << " ,sec str: " << str2 << std::endl;
     
     
-    if (len1 != len2) std::cout << "error!!" << std::endl;
+   // if (len1 != len2) std::cout << "error!!" << std::endl;
 
     for (int i=0; i<len1; i++){arr1[i] = str1[i];arr2[i] = str2[i];} // copy strings into arrays
 
@@ -28,7 +28,6 @@ std::string calculateBullAndPgia(const std::string str1, const std::string str2)
 
     for (int i=0; i<len1; i++){//o(n^2)
         flag=0;
-  //  if (visited[i] == 1) continue;
 
     if (arr1[i] == arr2[i]){
     visited[i]=-1;
