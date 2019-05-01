@@ -24,8 +24,10 @@ std::string calculateBullAndPgia(const std::string str1, const std::string str2)
 
     int B=0;
     int P=0;
+    int flag=0;
 
     for (int i=0; i<len1; i++){//o(n^2)
+        flag=0;
   //  if (visited[i] == 1) continue;
 
     if (arr1[i] == arr2[i]){
@@ -33,10 +35,11 @@ std::string calculateBullAndPgia(const std::string str1, const std::string str2)
     B++;
     }
     else{
-        for (int j=0; j<len1; j++){
+        for (int j=0; j<len1 && flag=0; j++){
         if (i!=j && arr1[i] == arr2[j] && arr2[j] != arr1[j] && arr2[j] != -1 ){
         P++;
         arr2[j]=-1;
+         flag=1;
         }
     }
 
