@@ -62,9 +62,9 @@
             return give_sequence();
                 }
             if (bul-found==1){
-            certain[looking++] = (look_counter-1);
+            certain[looking++] = 0;
             found++;
-            look_counter=0;
+           
                 }
               if (bul-found==0){
               for (int i=0; i<length; i++){
