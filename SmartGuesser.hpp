@@ -14,7 +14,7 @@ class SmartGuesser : public bullpgia::Guesser { // son that extends guesser
 
 private:
     int dig_Counter;
-    int look_counter;
+ 
     int bul;
     int looking;
     int found;
