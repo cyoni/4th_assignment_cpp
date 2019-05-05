@@ -17,7 +17,7 @@
     bul=-1;
     looking=0;
     dig_Counter=9;
-    look_counter=0;
+    
     length=l;
     Guess="";
     found=0;
