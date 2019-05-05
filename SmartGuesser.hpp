@@ -12,7 +12,7 @@ namespace bullpgia{
 
 class SmartGuesser : public bullpgia::Guesser { // son that extends guesser
 
-private:
+protected: // can be accessed only by base members, friends and derived classes
     int dig_Counter;
  
     int bul;
@@ -34,7 +34,6 @@ private:
 
 
 
-protected: // can be accessed only by base members, friends and derived classes
 
 
 public:
