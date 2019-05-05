@@ -47,7 +47,6 @@
     return false; // the number was not found
     }
     string bullpgia::SmartGuesser::guess(){ // goes to here
-    cout << "bul pgia. "<< bAndp << " and try no. " << Try << endl;
     string tmp1 = "";
     string tmp2 = "";
         Try++;
@@ -80,7 +79,6 @@
                  Rand = rand() % 10;
                 if (check_if_not_in_list(looking, Rand)==0){ // if the random number was not picked up before
                 Guess[looking] = Rand+48;
-               // cout << "I GUESSED " << Guess << endl;
                 return Guess;}
                     }
                 }
