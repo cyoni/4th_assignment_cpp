@@ -14,7 +14,6 @@
     }
 
     void bullpgia::SmartGuesser::startNewGame(uint l){
-    std::cout << "startNewGame - smartGuesser" << std::endl;
     bul=-1;
     looking=0;
     dig_Counter=9;
