@@ -22,11 +22,8 @@ namespace bullpgia{
     //but if not, then I have to implement it.
 
     virtual void startNewGame(uint len){ // if it is virtual start() in the son will be invoked
-    std::cout << "the game has begun: " << std::endl;
     length = len;
    }
-
-
 
 };
 
