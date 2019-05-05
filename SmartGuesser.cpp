@@ -104,14 +104,14 @@
 
                 while(1){
                  Rand = rand() % 10;
-                if (check_if_not_in_list(looking, Rand)==0){
+                if (check_if_not_in_list(looking, Rand)==0){ // if the random number was not picked up before
                 Guess[looking] = Rand+48;
                // cout << "I GUESSED " << Guess << endl;
                 return Guess;}
-                else{
-               if (!check_if_not_in_list(looking, Rand-48)) { not_in_place[looking].push_back(Rand);}
+              //  else{
+           //    if (!check_if_not_in_list(looking, Rand-48)) { not_in_place[looking].push_back(Rand);}
 
-                }
+            //    }
 
                     }
 
