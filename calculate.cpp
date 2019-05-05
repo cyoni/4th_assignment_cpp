@@ -36,5 +36,6 @@ std::string calculateBullAndPgia(const std::string str1, const std::string str2)
     }
 
     }
+     std::string result = std::to_string(B) + "," + std::to_string(P);
     return result;
 }
